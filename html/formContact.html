@@ -1,0 +1,45 @@
+<div id=header>
+	<h1>Contact Informations</h1>
+</div>
+<form  action=send method=post enctype="multipart/form-data" >
+	<table width=100%>
+	<tr>
+		<th width=20% >Prénom:</th>
+		<td colspan=3><input type=text name=firstname placeholder="your first name" required/></td>
+	</tr><tr>
+		<th>Nom:</th>
+		<td colspan=3><input type=text name=lastname placeholder="your last name" required/></td>
+	</tr><tr>
+		<th>E-Mail:</th>
+		<td colspan=3><input type=email name=fromMail placeholder="toto@gmail.com" required/></td>
+	</tr><tr>
+		<th>Civilité:</th>
+		<td><input type=radio name=civility id=civilityMr   value=mr checked=true><label for=civilityMr >Mr</label></td>
+		<td><input type=radio name=civility id=civilityMme  value=mme  ><label for=civilityMme >Mme</label></td>
+		<td><input type=radio name=civility id=civilityMlle value=mlle ><label for=civilityMlle >Mlle</label></td>
+	</tr><tr>
+		<th>Pays:</th>
+		<td colspan=3>
+			<select name="pays">
+				<optgroup label="Europe">
+					<option value="france">France</option>
+					<option value="allemagne">Allemagne</option>
+					<option value="grece">Grèce</option>
+				</optgroup>
+				<optgroup label="Amérique">
+					<option value="nicaragua">Nicaragua</option>
+					<option value="bahamas">Bahamas</option>
+				</optgroup>
+			</select>
+		</td>
+	</tr><tr>
+		<th>Age:</th>
+		<td colspan=3><input type=number name=age min=0 max=100 value=18 size=5></td>
+	</tr><tr>
+		<th>CV:</th>
+		<td colspan=3><input type=file name=cv /></td>
+	</tr><tr>
+		<td colspan=4><input type=submit /></td>
+	</tr>
+	</table>
+</form>
